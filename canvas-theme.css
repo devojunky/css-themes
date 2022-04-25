@@ -1,1 +1,6 @@
-@import url()
+
+:root {
+    --background-image: url("https://preview.redd.it/4l46ruh1vbv81.jpg?width=640&crop=smart&auto=webp&s=1a6fa91aa21f10f7dd0ad7d85fdb28cde6a0d427");
+}
+
+@import url("https://raw.githubusercontent.com/devojunky/css-themes/main/canvas-theme-autoupdate.css")
