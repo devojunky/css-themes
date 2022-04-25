@@ -1,0 +1,623 @@
+/*
+	* Prefixed by https://autoprefixer.github.io
+	* PostCSS: v8.4.12,
+	* Autoprefixer: v10.4.4
+	* Browsers: last 4 version
+	*/
+
+::-webkit-scrollbar {
+    background-color: rgb(50, 50, 50);
+    color: #aba499;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+
+/* MY OWN VARS */
+:root {
+	--ic-brand-watermark: url(https://raw.githubusercontent.com/devojunky/css-themes/main/Untitled.png);
+    --background-image: url("https://preview.redd.it/tv7b6eavjgn71.png?width=1920&format=png&auto=webp&s=5f12a53b89da04609cd8ebcd86270b70b3fe148e")
+}
+
+/* canvas */
+
+body {
+    /* background: rgb(35, 35, 35); */
+	/* background: url("https://preview.redd.it/4l46ruh1vbv81.jpg?width=640&crop=smart&auto=webp&s=1a6fa91aa21f10f7dd0ad7d85fdb28cde6a0d427"); */
+	background: var(--background-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+    background-attachment:fixed;
+}
+
+.ic-Layout-contentMain {
+    padding: 0px
+}
+
+body {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #c4c4c4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* assignment labels */
+:root {
+    --dLyYq-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --dLyYq-padding: 0 0.5rem;
+    --dLyYq-height: 1.3125rem;
+    --dLyYq-background: #6f6f6f91; /*background of missing label and stuff */
+    --dLyYq-textTransformStyle: lowercase; /* capitalization of the labels */
+    --dLyYq-textFontSize: 0.75rem;
+    --dLyYq-textFontWeight: 700;
+    --dLyYq-maxWidth: 15rem;
+    --dLyYq-color: #6B7780;
+    --dLyYq-primaryColor: #afbeca; /* non emphasized label color e.g. graded */
+    --dLyYq-infoColor: #0374B5;
+    --dLyYq-dangerColor: #eb6272; /* "danger" label color */
+    --dLyYq-successColor: #00ff84;
+    --dLyYq-warningColor: #FC5E13;
+    --dLyYq-alertColor: #BF32A4;
+    --dLyYq-messageColor: #BF32A4;
+    --dLyYq-borderWidth: 0.14rem;
+    --dLyYq-borderStyle: solid;
+    --dLyYq-borderRadius: 0.5rem;
+}
+
+/* planner cards */
+:root {
+    --pFBbo-fontSize: 1rem;
+    --pFBbo-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --pFBbo-fontWeight: 400;
+    --pFBbo-lineHeight: 1.25;
+    --pFBbo-secondaryFontSize: 1.2rem;
+    --pFBbo-secondaryFontWeight: 700;
+    --pFBbo-secondaryLineHeight: 1.25;
+    --pFBbo-color: #acb5bc;
+    --pFBbo-background: rgba(63, 63, 63, .6);
+    --pFBbo-marginTop: 2rem;
+}
+
+/* header buttons */
+:root {
+    --dIgyp-fontSize: 1rem;
+    --dIgyp-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --dIgyp-fontWeight: 400;
+    --dIgyp-color: #394B58;
+    --dIgyp-background: #0000;
+}
+
+/* other vars idk */
+
+:root {
+    --eHiXd-borderWidth: 0.0625rem;
+    --eHiXd-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --eHiXd-fontWeight: 400;
+    --eHiXd-textTransform: none;
+    --eHiXd-letterSpacing: normal;
+    --eHiXd-borderRadius: 0.25rem;
+    --eHiXd-borderStyle: solid;
+    --eHiXd-transform: none;
+    --eHiXd-hoverTransform: none;
+    --eHiXd-smallHeight: 1.75rem;
+    --eHiXd-smallPadding: 0.5rem;
+    --eHiXd-smallFontSize: 0.875rem;
+    --eHiXd-mediumHeight: 2.375rem;
+    --eHiXd-mediumPadding: 0.75rem;
+    --eHiXd-mediumFontSize: 1rem;
+    --eHiXd-largeHeight: 3rem;
+    --eHiXd-largePadding: 1.5rem;
+    --eHiXd-largeFontSize: 1.375rem;
+    --eHiXd-focusBorder: 0.125rem solid #414141;
+    --eHiXd-focusShadow: none;
+    --eHiXd-lightBackground: #ffffff0f; /* background for today button */
+    --eHiXd-lightBorderColor: rgba(219, 219, 219, .05);
+    --eHiXd-lightBorderStyle: solid;
+    --eHiXd-lightColor: #cacaca;
+    --eHiXd-lightHoverBackground: rgb(48, 48, 48);
+    --eHiXd-lightActiveBackground: #FFFFFF;
+    --eHiXd-lightActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(191, 191, 191);
+    --eHiXd-ghostBackground: transparent;
+    --eHiXd-ghostBorderColor: #67823a;
+    --eHiXd-ghostBorderStyle: solid;
+    --eHiXd-ghostColor: #67823a;
+    --eHiXd-ghostHoverBackground: rgba(103, 130, 58, 0.1);
+    --eHiXd-ghostActiveBackground: transparent;
+    --eHiXd-ghostActiveBoxShadow: inset 0 0 1px 1px rgba(103, 130, 58, 0.2);
+    --eHiXd-ghostInverseBackground: transparent;
+    --eHiXd-ghostInverseBorderColor: #FFFFFF;
+    --eHiXd-ghostInverseBorderStyle: solid;
+    --eHiXd-ghostInverseColor: #FFFFFF;
+    --eHiXd-ghostInverseHoverBackground: rgba(255, 255, 255, 0.1);
+    --eHiXd-ghostInverseActiveBackground: transparent;
+    --eHiXd-ghostInverseActiveBoxShadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.2);
+    --eHiXd-linkColor: #67823a;
+    --eHiXd-linkBorderColor: transparent;
+    --eHiXd-linkFocusBorderColor: transparent;
+    --eHiXd-linkHoverColor: rgb(75, 95, 42);
+    --eHiXd-linkTextDecoration: none;
+    --eHiXd-linkInverseColor: #F5F5F5;
+    --eHiXd-inverseFocusBorder: 0.125rem solid #FFFFFF;
+    --eHiXd-iconBorderColor: transparent;
+    --eHiXd-iconPadding: 0 0.375rem;
+    --eHiXd-iconColor: #c6c6c6;
+    --eHiXd-iconHoverColor: #9d9d9d;
+    --eHiXd-iconActiveColor: rgb(25, 33, 38);
+    --eHiXd-iconFocusBoxShadow: inset 0 0 0 0.0625rem #414141;
+    --eHiXd-iconPlusTextFontSize: 1.25rem;
+    --eHiXd-iconSizeSmall: 1rem;
+    --eHiXd-iconSizeMedium: 1.25rem;
+    --eHiXd-iconSizeLarge: 1.625rem;
+    --eHiXd-iconPlusTextMargin: 0.5rem;
+    --eHiXd-iconInverseColor: #FFFFFF;
+    --eHiXd-iconInverseHoverColor: #FFFFFF;
+    --eHiXd-iconInverseFocusBoxShadow: inset 0 0 0 0.0625rem #FFFFFF;
+    --eHiXd-fluidWidthLineHeight: 1.125;
+    --eHiXd-defaultBackground: #F5F5F5;
+    --eHiXd-defaultBorderColor: rgb(219, 219, 219);
+    --eHiXd-defaultColor: #2D3B45;
+    --eHiXd-defaultHoverBackground: rgb(219, 219, 219);
+    --eHiXd-defaultActiveBackground: rgb(219, 219, 219);
+    --eHiXd-defaultActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(194, 194, 194);
+    --eHiXd-primaryBackground: #67823a;
+    --eHiXd-primaryBorderColor: rgb(75, 95, 42);
+    --eHiXd-primaryColor: #ffffff;
+    --eHiXd-primaryHoverBackground: rgb(75, 95, 42);
+    --eHiXd-primaryActiveBackground: rgb(75, 95, 42);
+    --eHiXd-primaryActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(47, 59, 27);
+    --eHiXd-successBackground: #0B874B;
+    --eHiXd-successBorderColor: rgb(7, 88, 49);
+    --eHiXd-successColor: #FFFFFF;
+    --eHiXd-successHoverBackground: rgb(7, 88, 49);
+    --eHiXd-successActiveBackground: rgb(7, 88, 49);
+    --eHiXd-successActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(3, 41, 23);
+    --eHiXd-dangerBackground: #E0061F;
+    --eHiXd-dangerBorderColor: rgb(174, 5, 24);
+    --eHiXd-dangerColor: #FFFFFF;
+    --eHiXd-dangerHoverBackground: rgb(174, 5, 24);
+    --eHiXd-dangerActiveBackground: rgb(174, 5, 24);
+    --eHiXd-dangerActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(125, 3, 17);
+    --eHiXd-circleDefaultBackground: #F5F5F5;
+    --eHiXd-circleDefaultBorderColor: rgb(219, 219, 219);
+    --eHiXd-circleDefaultColor: #2D3B45;
+    --eHiXd-circleDefaultHoverBackground: rgb(219, 219, 219);
+    --eHiXd-circleDefaultActiveBackground: rgb(219, 219, 219);
+    --eHiXd-circleDefaultActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(194, 194, 194);
+    --eHiXd-circlePrimaryBackground: #67823a;
+    --eHiXd-circlePrimaryBorderColor: rgb(75, 95, 42);
+    --eHiXd-circlePrimaryColor: #ffffff;
+    --eHiXd-circlePrimaryHoverBackground: rgb(75, 95, 42);
+    --eHiXd-circlePrimaryActiveBackground: rgb(75, 95, 42);
+    --eHiXd-circlePrimaryActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(47, 59, 27);
+    --eHiXd-circleDangerBackground: #E0061F;
+    --eHiXd-circleDangerBorderColor: rgb(174, 5, 24);
+    --eHiXd-circleDangerColor: #FFFFFF;
+    --eHiXd-circleDangerHoverBackground: rgb(174, 5, 24);
+    --eHiXd-circleDangerActiveBackground: rgb(174, 5, 24);
+    --eHiXd-circleDangerActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(125, 3, 17);
+}
+
+:root {
+    --fQfxa-transform: none;
+    --fQfxa-hoverTransform: none;
+    --fQfxa-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --fQfxa-fontWeight: 400;
+    --fQfxa-textTransform: none;
+    --fQfxa-letterSpacing: normal;
+    --fQfxa-borderRadius: 0.25rem;
+    --fQfxa-borderStyle: solid;
+    --fQfxa-borderWidth: 0.0625rem;
+    --fQfxa-smallHeight: 1.75rem;
+    --fQfxa-smallFontSize: 0.875rem;
+    --fQfxa-smallPaddingHorizontal: 0.5rem;
+    --fQfxa-smallPaddingTop: 0.375rem;
+    --fQfxa-smallPaddingBottom: 0.3125rem;
+    --fQfxa-mediumHeight: 2.375rem;
+    --fQfxa-mediumFontSize: 1rem;
+    --fQfxa-mediumPaddingHorizontal: 0.75rem;
+    --fQfxa-mediumPaddingTop: 0.5625rem;
+    --fQfxa-mediumPaddingBottom: 0.5625rem;
+    --fQfxa-largeHeight: 3rem;
+    --fQfxa-largeFontSize: 1.375rem;
+    --fQfxa-largePaddingHorizontal: 1.5rem;
+    --fQfxa-largePaddingTop: 0.6875rem;
+    --fQfxa-largePaddingBottom: 0.6875rem;
+    --fQfxa-lineHeight: 1.125;
+    --fQfxa-iconSizeSmall: 1rem;
+    --fQfxa-iconSizeMedium: 1.25rem;
+    --fQfxa-iconSizeLarge: 1.625rem;
+    --fQfxa-primaryColor: #ffffff;
+    --fQfxa-primaryBorderColor: rgb(75, 95, 42);
+    --fQfxa-primaryBackground: #67823a;
+    --fQfxa-primaryHoverBackground: rgb(75, 95, 42);
+    --fQfxa-primaryActiveBackground: rgb(75, 95, 42);
+    --fQfxa-primaryActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(47, 59, 27);
+    --fQfxa-primaryGhostColor: #67823a;
+    --fQfxa-primaryGhostBorderColor: #67823a;
+    --fQfxa-primaryGhostBackground: transparent;
+    --fQfxa-primaryGhostHoverBackground: rgba(103, 130, 58, 0.1);
+    --fQfxa-primaryGhostActiveBackground: transparent;
+    --fQfxa-primaryGhostActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgba(103, 130, 58, 0.28);
+    --fQfxa-secondaryColor: #2D3B45;
+    --fQfxa-secondaryBorderColor: rgb(219, 219, 219);
+    --fQfxa-secondaryBackground: #F5F5F5;
+    --fQfxa-secondaryHoverBackground: rgb(219, 219, 219);
+    --fQfxa-secondaryActiveBackground: rgb(219, 219, 219);
+    --fQfxa-secondaryActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(194, 194, 194);
+    --fQfxa-secondaryGhostColor: #b0b0b0; /* three dots color */
+    --fQfxa-secondaryGhostBorderColor: #2D3B45;
+    --fQfxa-secondaryGhostBackground: transparent;
+    --fQfxa-secondaryGhostHoverBackground: rgba(45, 59, 69, 0.1);
+    --fQfxa-secondaryGhostActiveBackground: transparent;
+    --fQfxa-secondaryGhostActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgba(45, 59, 69, 0.28);
+    --fQfxa-successColor: #FFFFFF;
+    --fQfxa-successBorderColor: rgb(7, 88, 49);
+    --fQfxa-successBackground: #0B874B;
+    --fQfxa-successHoverBackground: rgb(7, 88, 49);
+    --fQfxa-successActiveBackground: rgb(7, 88, 49);
+    --fQfxa-successActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(3, 41, 23);
+    --fQfxa-successGhostColor: #0B874B;
+    --fQfxa-successGhostBorderColor: #0B874B;
+    --fQfxa-successGhostBackground: transparent;
+    --fQfxa-successGhostHoverBackground: rgba(11, 135, 75, 0.01);
+    --fQfxa-successGhostActiveBackground: transparent;
+    --fQfxa-successGhostActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgba(11, 135, 75, 0.28);
+    --fQfxa-dangerColor: #FFFFFF;
+    --fQfxa-dangerBorderColor: rgb(174, 5, 24);
+    --fQfxa-dangerBackground: #E0061F;
+    --fQfxa-dangerHoverBackground: rgb(174, 5, 24);
+    --fQfxa-dangerActiveBackground: rgb(174, 5, 24);
+    --fQfxa-dangerActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(125, 3, 17);
+    --fQfxa-dangerGhostColor: #E0061F;
+    --fQfxa-dangerGhostBorderColor: #E0061F;
+    --fQfxa-dangerGhostBackground: transparent;
+    --fQfxa-dangerGhostHoverBackground: rgba(224, 6, 31, 0.1);
+    --fQfxa-dangerGhostActiveBackground: transparent;
+    --fQfxa-dangerGhostActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgba(224, 6, 31, 0.28);
+    --fQfxa-primaryInverseColor: #2D3B45;
+    --fQfxa-primaryInverseBorderColor: rgb(219, 219, 219);
+    --fQfxa-primaryInverseBackground: #FFFFFF;
+    --fQfxa-primaryInverseHoverBackground: rgb(242, 242, 242);
+    --fQfxa-primaryInverseActiveBackground: #FFFFFF;
+    --fQfxa-primaryInverseActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgb(191, 191, 191);
+    --fQfxa-primaryInverseGhostColor: #FFFFFF;
+    --fQfxa-primaryInverseGhostBorderColor: #FFFFFF;
+    --fQfxa-primaryInverseGhostBackground: transparent;
+    --fQfxa-primaryInverseGhostHoverBackground: rgba(255, 255, 255, 0.1);
+    --fQfxa-primaryInverseGhostActiveBackground: transparent;
+    --fQfxa-primaryInverseGhostActiveBoxShadow: inset 0 0 0.1875rem 0.0625rem rgba(255, 255, 255, 0.28);
+}
+
+/* title vars */
+:root {
+    --bDBte-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --bDBte-lineHeight: 1.25;
+    --bDBte-margin: 1.5rem 0 0 0;
+    --bDBte-groupColor: #414141;
+    --bDBte-borderTopWidth: 0.0625rem;
+    --bDBte-borderTopWidthTablet: 0.125rem;
+    --bDBte-heroMinHeight: 7rem;
+    --bDBte-heroWidth: 12rem;
+    --bDBte-heroWidthLarge: 14rem;
+    --bDBte-heroPadding: 0.0625rem;
+    --bDBte-heroColor: #0374B5;
+    --bDBte-heroBorderRadius: 0.25rem;
+    --bDBte-overlayOpacity: 0.75;
+    --bDBte-titleFontSize: 0.75rem;
+    --bDBte-titleFontSizeTablet: 0.875rem;
+    --bDBte-titleFontWeight: 700;
+    --bDBte-titleLetterSpacing: 0.0625rem;
+    --bDBte-titleBackground: #fff0;
+    --bDBte-titleTextTransform: uppercase;
+    --bDBte-titlePadding: 0.375rem 0.5rem;
+    --bDBte-titleOverflowGradientHeight: 0.375rem;
+    --bDBte-titleTextDecoration: none;
+    --bDBte-titleTextDecorationHover: underline;
+    --bDBte-titleColor: #414141;
+    --bDBte-mediumMin: min-width: 48em;
+    --bDBte-largeMin: min-width: 62em;
+    --bDBte-xLargeMin: min-width: 75em;
+}
+
+.Grouping-styles__title {
+    filter: brightness(250%) saturate(60%);
+}
+
+/* planner card */
+
+
+.fLzZc_bGBk {
+    background-color: rgba(35, 35, 35, .72);
+    max-height: 100vh;
+    max-width: 100vw;
+	-webkit-backdrop-filter: blur(60px) saturate(180%);
+}
+
+.eHiXd_brAJ, a.eHiXd_brAJ, button.eHiXd_brAJ, button.eHiXd_brAJ[type="button"], button.eHiXd_brAJ[type="reset"], button.eHiXd_brAJ[type="submit"] {
+    color: #939f7d;
+}
+
+.Grouping-styles__items {
+	background: #5e5e5e29;
+	border-bottom-right-radius: 0.6rem;
+	border-top-right-radius: 0.6rem;
+}
+
+[dir="ltr"] .Grouping-styles__hero, [dir="ltr"] .Grouping-styles__overlay {
+	border-top-left-radius: 0.6rem;
+	border-bottom-left-radius: 0.6rem;
+}
+
+.Day-styles__root {
+    border-radius: 1rem;
+    padding: 0.75rem;
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    margin: 24px;
+	box-shadow: 10px 10px 15px #00000038;
+    padding-bottom: 2.6rem;
+    padding-top: 1rem;
+}
+
+.Grouping-styles__medium .Grouping-styles__items, .Grouping-styles__small .Grouping-styles__items {
+    border-width: 0;
+    border: none;
+    background: #ffffff0d;
+    border-radius: 0.6rem
+}
+
+.PlannerItem-styles__root,
+.CompletedItemsFacade-styles__root {
+    border: none;
+}
+
+.PlannerItem-styles__details.PlannerItem-styles__details_no_badges,
+.MlJlv_bGBk {
+    filter: brightness(200%) saturate(60%)
+}
+
+.blnAQ_kWwi {
+    border: none;
+}
+
+:root {
+    --voGQb-fontSize: 1rem;
+    --voGQb-fontFamily: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --voGQb-fontWeight: 400;
+    --voGQb-lineHeight: 1.25;
+    --voGQb-color: #dcdcdc;
+    --voGQb-background: #fff0;
+    --voGQb-marginTop: 2.25rem;
+    --voGQb-borderWidth: 0.0625rem;
+    --voGQb-paddingWidth: 0.75rem;
+}
+
+.EmptyDays-styles__root {
+    position: relative;
+    font-size: var(--voGQb-fontSize);
+    font-family: var(--voGQb-fontFamily);
+    font-weight: var(--voGQb-fontWeight);
+    line-height: var(--voGQb-lineHeight);
+    color: var(--voGQb-color);
+    background: var(--voGQb-background);
+    margin-top: var(--voGQb-marginTop);
+    border-bottom-width: var(--voGQb-borderWidth);
+    border-bottom-style: none;
+}
+
+.PlannerItem-styles__due, .PlannerItem-styles__score {
+    color: #cbcbcb;
+    box-sizing: border-box;
+    text-transform: lowercase;
+    letter-spacing: 0.0625rem;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.yyQPt_cSXm {
+    background: #ffffff40;
+}
+
+/* dashboard header */
+.ic-Dashboard-header__layout {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 0px solid #c7cdd112;
+    background: rgba(35, 35, 35, .72);
+    box-sizing: border-box;
+    height: 4.5rem;
+    width: calc(100vw - 101px);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    padding: 24px;
+}
+
+.fOyUs_fZwI, .fOyUs_kXoP {
+    background: rgba(62, 62, 62, .5);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: none;
+}
+
+/* notification banner */
+
+.eMdva_caGd {
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    font-family: var(--eMdva-contentFontFamily);
+    font-size: var(--eMdva-contentFontSize);
+    font-weight: var(--eMdva-contentFontWeight);
+    line-height: var(--eMdva-contentLineHeight);
+    min-width: 0.0625rem;
+    padding: var(--eMdva-contentPadding);
+}
+
+.eMdva_bgqc {
+    background: var(--eMdva-background);
+    border-radius: var(--eMdva-borderRadius);
+    border-style: var(--eMdva-borderStyle);
+    border-width: var(--eMdva-borderWidth);
+    box-sizing: border-box;
+    color: var(--eMdva-color);
+    display: flex;
+    min-width: 12rem;
+}
+
+.dCppM_ddES,
+.dpCPB_caGd{
+    background: transparent;
+    border: none;
+}
+
+.XOwIb_ddES {
+    color: #e6e6e6;
+}
+
+.XOwIb_ddES[aria-selected]::after {
+    background-color: #888;
+}
+
+.Opportunity-styles__root {
+    background: #ffffff12;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    padding-top: 0;
+}
+
+.Opportunities-styles__item:not(:first-of-type) {
+    border: none;
+    padding-top: 0;
+}
+
+/* green thing on the left */
+.ic-app-header {
+	background: rgba(35, 35, 35, .72);
+	-webkit-backdrop-filter: blur(60px) saturate(180%);
+}
+
+.ic-app-header__logomark-container {
+	background: transparent
+}
+
+body.primary-nav-expanded .ic-app-header__logomark,
+.ic-app-header__logomark {
+	filter: grayscale(1) saturate(0);
+	-webkit-transition: -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	-o-transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s, -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s; 
+}
+
+body.primary-nav-expanded .ic-app-header__logomark:hover,
+.ic-app-header__logomark:hover {
+	filter: grayscale(0) saturate(2);
+	-webkit-transition: -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	-o-transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+	transition: filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s, -webkit-filter cubic-bezier(0.65, 0.05, 0.36, 1) 1s; 
+}
+
+/* assignment details */
+.user_content, .mceContentBodyr {
+    -webkit-backdrop-filter: blur(100px) brightness(0.6);
+	padding: 1rem;
+	border-radius: 1rem;
+	border: none;
+}
+
+.list-view>ul, .list-view>nav>ul, .list-view>div>nav>ul,
+.assignment.content_underline_links,
+#breadcrumbs>ul {
+    -webkit-backdrop-filter: blur(100px) brightness(0.6);
+	padding: 1rem;
+	border-radius: 1rem;
+	border: none;
+	margin-left: 1rem;
+}
+
+#breadcrumbs>ul {
+    -webkit-backdrop-filter: blur(100px) brightness(0.6);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.ic-app-nav-toggle-and-crumbs {
+	margin-top: 1rem;
+	border: none;
+}
+
+a,
+.ic-app-footer__links a,
+.enRcg_bGBk.enRcg_bLsb, input.enRcg_bGBk[type].enRcg_bLsb {
+    color: #d7d5d5;
+    text-decoration: none;
+}
+
+.list-view a.active,
+#breadcrumbs>ul>li+li:last-of-type a {
+    border-left: 2px solid #4b4c4d;
+    color: #fff;
+}
+
+#breadcrumbs {
+    background-color: #fff0;
+}
+
+.ic-app-nav-toggle-and-crumbs {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #c7cdd138;
+    margin: 0 24px;
+    min-height: 4.5rem;
+    box-sizing: border-box;
+}
+
+body:not(.ic-no-flex-layout):not(.embedded) .ic-app-main-content {
+	padding-top: 2rem;
+}
+
+#assignment_show .student-assignment-overview {
+    list-style: none;
+    box-sizing: border-box;
+    border-top: 1px solid #c7cdd140;
+    border-bottom: 1px solid #c7cdd138;
+    padding: 12px 0;
+    margin: 0 0 18px 0;
+}
+
+.btn-primary:hover, .Button--primary:hover {
+    background: #3939395e;
+    color: var(--ic-brand-button--primary-text);
+}
+
+.btn-primary, .Button--primary,
+.btn, .Button, .ui-button {
+    background: #5e5e5ea8;
+	border: none;
+	border-radius: 0.5rem;
+    color: #eaeaea;
+}
+
+.module-sequence-footer .module-sequence-footer-content {
+    height: 64px;
+    background: #fff0;
+    border-top: 1px solid #c7cdd12e;
+    box-sizing: border-box;
+    padding-top: 12px;
+}
+
+.ic-app-footer {
+	border: none;
+	background: #00000063;
+}
